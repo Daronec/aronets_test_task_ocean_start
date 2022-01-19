@@ -19,6 +19,11 @@ String? switchValidation(
         return "Заполните поле";
       }
       break;
+    case TextFieldType.text:
+      if (value.isEmpty) {
+        return "Заполните поле";
+      }
+      break;
     case TextFieldType.email:
       if (!Registers.email.hasMatch(value)) return 'E-mail введён не верно';
       return null;
