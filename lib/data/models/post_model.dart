@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:aronets_test_task_eclipse/data/models/comment_model.dart';
+import 'package:aronets_test_task_ocean_start/data/models/comment_model.dart';
 import 'package:hive/hive.dart';
 
 part 'post_model.g.dart';

@@ -1,4 +1,4 @@
-import 'package:aronets_test_task_eclipse/constants/constants.dart';
+import 'package:aronets_test_task_ocean_start/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 TextInputType switchInputType(TextFieldType fieldType) {

@@ -1,5 +1,5 @@
-import 'package:aronets_test_task_eclipse/styles/app_colors.dart';
-import 'package:aronets_test_task_eclipse/widgets/custom_circular_indicator.dart';
+import 'package:aronets_test_task_ocean_start/styles/app_colors.dart';
+import 'package:aronets_test_task_ocean_start/widgets/custom_circular_indicator.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 

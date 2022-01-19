@@ -1,13 +1,13 @@
-import 'package:aronets_test_task_eclipse/constants/constants.dart';
-import 'package:aronets_test_task_eclipse/screens/users_screen/details_user_screen/bloc/details_user_bloc.dart';
-import 'package:aronets_test_task_eclipse/screens/users_screen/details_user_screen/widgets/albums_preview.dart';
-import 'package:aronets_test_task_eclipse/screens/users_screen/details_user_screen/widgets/post_preview.dart';
-import 'package:aronets_test_task_eclipse/screens/users_screen/details_user_screen/widgets/user_info.dart';
-import 'package:aronets_test_task_eclipse/screens/users_screen/details_user_screen/widgets/working_info.dart';
-import 'package:aronets_test_task_eclipse/styles/app_colors.dart';
-import 'package:aronets_test_task_eclipse/widgets/custom_circular_indicator.dart';
-import 'package:aronets_test_task_eclipse/widgets/main_app_bar.dart';
-import 'package:aronets_test_task_eclipse/widgets/snack_bar.dart';
+import 'package:aronets_test_task_ocean_start/constants/constants.dart';
+import 'package:aronets_test_task_ocean_start/screens/users_screen/details_user_screen/bloc/details_user_bloc.dart';
+import 'package:aronets_test_task_ocean_start/screens/users_screen/details_user_screen/widgets/albums_preview.dart';
+import 'package:aronets_test_task_ocean_start/screens/users_screen/details_user_screen/widgets/post_preview.dart';
+import 'package:aronets_test_task_ocean_start/screens/users_screen/details_user_screen/widgets/user_info.dart';
+import 'package:aronets_test_task_ocean_start/screens/users_screen/details_user_screen/widgets/working_info.dart';
+import 'package:aronets_test_task_ocean_start/styles/app_colors.dart';
+import 'package:aronets_test_task_ocean_start/widgets/custom_circular_indicator.dart';
+import 'package:aronets_test_task_ocean_start/widgets/main_app_bar.dart';
+import 'package:aronets_test_task_ocean_start/widgets/snack_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

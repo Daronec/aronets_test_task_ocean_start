@@ -1,4 +1,4 @@
-import 'package:aronets_test_task_eclipse/styles/app_colors.dart';
+import 'package:aronets_test_task_ocean_start/styles/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class MainAppBar extends StatelessWidget implements PreferredSizeWidget {

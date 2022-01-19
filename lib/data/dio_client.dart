@@ -1,4 +1,4 @@
-import 'package:aronets_test_task_eclipse/constants/endpoints.dart';
+import 'package:aronets_test_task_ocean_start/constants/endpoints.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 

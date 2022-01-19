@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:aronets_test_task_eclipse/data/models/user_model.dart';
-import 'package:aronets_test_task_eclipse/repository/repository.dart';
+import 'package:aronets_test_task_ocean_start/data/models/user_model.dart';
+import 'package:aronets_test_task_ocean_start/repository/repository.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';

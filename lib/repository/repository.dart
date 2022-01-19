@@ -1,7 +1,7 @@
-import 'package:aronets_test_task_eclipse/data/models/album_model.dart';
-import 'package:aronets_test_task_eclipse/data/models/post_model.dart';
-import 'package:aronets_test_task_eclipse/data/models/user_model.dart';
-import 'package:aronets_test_task_eclipse/data/rest_api_service.dart';
+import 'package:aronets_test_task_ocean_start/data/models/album_model.dart';
+import 'package:aronets_test_task_ocean_start/data/models/post_model.dart';
+import 'package:aronets_test_task_ocean_start/data/models/user_model.dart';
+import 'package:aronets_test_task_ocean_start/data/rest_api_service.dart';
 import 'package:hive/hive.dart';
 
 class Repository {

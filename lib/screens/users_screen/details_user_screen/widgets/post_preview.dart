@@ -1,8 +1,8 @@
-import 'package:aronets_test_task_eclipse/data/models/post_model.dart';
-import 'package:aronets_test_task_eclipse/screens/posts_screen/details_post_screen/screen.dart';
-import 'package:aronets_test_task_eclipse/screens/posts_screen/screen.dart';
-import 'package:aronets_test_task_eclipse/styles/app_colors.dart';
-import 'package:aronets_test_task_eclipse/styles/app_text_style.dart';
+import 'package:aronets_test_task_ocean_start/data/models/post_model.dart';
+import 'package:aronets_test_task_ocean_start/screens/posts_screen/details_post_screen/screen.dart';
+import 'package:aronets_test_task_ocean_start/screens/posts_screen/screen.dart';
+import 'package:aronets_test_task_ocean_start/styles/app_colors.dart';
+import 'package:aronets_test_task_ocean_start/styles/app_text_style.dart';
 import 'package:flutter/material.dart';
 
 class PostPreview extends StatelessWidget {

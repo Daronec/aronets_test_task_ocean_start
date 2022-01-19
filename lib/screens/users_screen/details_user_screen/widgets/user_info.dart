@@ -1,8 +1,8 @@
-import 'package:aronets_test_task_eclipse/data/models/user_model.dart';
-import 'package:aronets_test_task_eclipse/helpers/functions.dart';
-import 'package:aronets_test_task_eclipse/styles/app_colors.dart';
-import 'package:aronets_test_task_eclipse/styles/app_text_style.dart';
-import 'package:aronets_test_task_eclipse/widgets/custom_circular_indicator.dart';
+import 'package:aronets_test_task_ocean_start/data/models/user_model.dart';
+import 'package:aronets_test_task_ocean_start/helpers/functions.dart';
+import 'package:aronets_test_task_ocean_start/styles/app_colors.dart';
+import 'package:aronets_test_task_ocean_start/styles/app_text_style.dart';
+import 'package:aronets_test_task_ocean_start/widgets/custom_circular_indicator.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
@@ -47,8 +47,7 @@ class UserInfo extends StatelessWidget {
                     ),
                   ),
                 ),
-                placeholder: (context, url) =>
-                const CustomCircularIndicator(),
+                placeholder: (context, url) => const CustomCircularIndicator(),
                 errorWidget: (context, url, error) => const Center(
                   child: Icon(Icons.error),
                 ),

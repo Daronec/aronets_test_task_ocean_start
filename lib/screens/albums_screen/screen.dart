@@ -1,7 +1,7 @@
-import 'package:aronets_test_task_eclipse/data/models/album_model.dart';
-import 'package:aronets_test_task_eclipse/styles/app_text_style.dart';
-import 'package:aronets_test_task_eclipse/widgets/large_image.dart';
-import 'package:aronets_test_task_eclipse/widgets/main_app_bar.dart';
+import 'package:aronets_test_task_ocean_start/data/models/album_model.dart';
+import 'package:aronets_test_task_ocean_start/styles/app_text_style.dart';
+import 'package:aronets_test_task_ocean_start/widgets/large_image.dart';
+import 'package:aronets_test_task_ocean_start/widgets/main_app_bar.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 

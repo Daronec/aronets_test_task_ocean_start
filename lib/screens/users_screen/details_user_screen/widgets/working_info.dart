@@ -1,5 +1,5 @@
-import 'package:aronets_test_task_eclipse/data/models/user_model.dart';
-import 'package:aronets_test_task_eclipse/styles/app_text_style.dart';
+import 'package:aronets_test_task_ocean_start/data/models/user_model.dart';
+import 'package:aronets_test_task_ocean_start/styles/app_text_style.dart';
 import 'package:flutter/material.dart';
 
 class WorkingInfo extends StatelessWidget {
