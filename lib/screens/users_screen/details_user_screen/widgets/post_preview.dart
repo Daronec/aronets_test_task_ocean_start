@@ -56,7 +56,7 @@ class PostPreview extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => DetailsPostScreen(
-                      id: postList[index].id!,
+                      id: postList[index].id! - 1,
                     ),
                   ),
                 );

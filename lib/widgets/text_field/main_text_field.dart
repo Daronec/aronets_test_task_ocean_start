@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:aronets_test_task_ocean_start/constants/constants.dart';
 import 'package:aronets_test_task_ocean_start/styles/app_colors.dart';
+import 'package:aronets_test_task_ocean_start/styles/app_text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:rxdart/rxdart.dart';
 
@@ -16,10 +17,6 @@ class MainTextField extends StatelessWidget {
     required this.type,
     this.hintText = '',
     this.color = Colors.white,
-    this.onChange,
-    this.onComplete,
-    this.formKey,
-    this.enableFocus = true,
     this.maxLines = 1,
   }) : super(key: key);
 
@@ -28,10 +25,6 @@ class MainTextField extends StatelessWidget {
   final TextFieldType type;
   final String hintText;
   final Color color;
-  final Function(String)? onChange;
-  final Function()? onComplete;
-  final GlobalKey<FormState>? formKey;
-  final bool enableFocus;
   final int maxLines;
 
   final _errorText = BehaviorSubject.seeded('');
@@ -52,7 +45,6 @@ class MainTextField extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
           ),
           child: TextFormField(
-            key: formKey!,
             enabled: true,
             maxLines: maxLines,
             controller: textController,
@@ -60,7 +52,6 @@ class MainTextField extends StatelessWidget {
             style: Theme.of(context).textTheme.headline6!.copyWith(
                   color: Colors.black,
                 ),
-            autofocus: enableFocus,
             keyboardType: switchInputType(type),
             toolbarOptions: const ToolbarOptions(paste: true),
             cursorColor: AppColors.orange,
@@ -68,9 +59,6 @@ class MainTextField extends StatelessWidget {
               final error = switchValidation(context, type, value!);
               _errorText.add(error ?? '');
               return error;
-            },
-            onChanged: (value) {
-              onChange!(textController.text);
             },
             decoration: InputDecoration(
               errorStyle: const TextStyle(
@@ -99,10 +87,12 @@ class MainTextField extends StatelessWidget {
             return snapshot.data!.isEmpty
                 ? const SizedBox()
                 : Padding(
-                    padding: const EdgeInsets.only(left: 10, top: 5),
+                    padding: const EdgeInsets.fromLTRB(5, 0, 5, 10),
                     child: Text(
                       snapshot.data!,
-                      style: const TextStyle(color: AppColors.red),
+                      style: AppTextStyle.textStyle14w300.copyWith(
+                        color: AppColors.orange,
+                      ),
                     ),
                   );
           },

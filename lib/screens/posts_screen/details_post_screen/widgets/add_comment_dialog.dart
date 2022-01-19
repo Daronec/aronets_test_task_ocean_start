@@ -37,35 +37,36 @@ class _Dialog extends StatelessWidget {
   Widget build(BuildContext context) {
     final vm = Provider.of<CommentViewModel>(ctx);
     return AlertDialog(
+      scrollable: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(10.0)),
       ),
-      title: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          MainTextField(
-            formKey: vm.nameKey,
-            textController: vm.nameTextController,
-            focusNode: vm.nameFocusNode,
-            type: TextFieldType.text,
-            hintText: 'Имя',
-          ),
-          MainTextField(
-            formKey: vm.emailKey,
-            textController: vm.emailTextController,
-            focusNode: vm.emailFocusNode,
-            type: TextFieldType.email,
-            hintText: 'E-mail',
-          ),
-          MainTextField(
-            formKey: vm.commentKey,
-            textController: vm.commentTextController,
-            focusNode: vm.commentFocusNode,
-            type: TextFieldType.text,
-            hintText: 'Ваш комментарий',
-            maxLines: 4,
-          ),
-        ],
+      title: Form(
+        key: vm.formKey,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            MainTextField(
+              textController: vm.nameTextController,
+              focusNode: vm.nameFocusNode,
+              type: TextFieldType.text,
+              hintText: 'Имя',
+            ),
+            MainTextField(
+              textController: vm.emailTextController,
+              focusNode: vm.emailFocusNode,
+              type: TextFieldType.email,
+              hintText: 'E-mail',
+            ),
+            MainTextField(
+              textController: vm.commentTextController,
+              focusNode: vm.commentFocusNode,
+              type: TextFieldType.text,
+              hintText: 'Ваш комментарий',
+              maxLines: 4,
+            ),
+          ],
+        ),
       ),
       actions: <Widget>[
         TextButton(
@@ -84,8 +85,10 @@ class _Dialog extends StatelessWidget {
         ),
         TextButton(
           onPressed: () {
-            func();
-            Navigator.of(ctx).pop();
+            if (vm.formKey.currentState!.validate()) {
+              func();
+              Navigator.of(ctx).pop();
+            }
           },
           child: const Text(
             'Да',

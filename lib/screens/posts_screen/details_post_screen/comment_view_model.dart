@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class CommentViewModel extends ChangeNotifier{
+class CommentViewModel extends ChangeNotifier {
   final nameTextController = TextEditingController(text: '');
   final emailTextController = TextEditingController(text: '');
   final commentTextController = TextEditingController(text: '');
@@ -9,9 +9,8 @@ class CommentViewModel extends ChangeNotifier{
   final emailFocusNode = FocusNode();
   final commentFocusNode = FocusNode();
 
+  final formKey = GlobalKey<FormState>();
   final nameKey = GlobalKey<FormState>();
   final emailKey = GlobalKey<FormState>();
   final commentKey = GlobalKey<FormState>();
-
-
 }
